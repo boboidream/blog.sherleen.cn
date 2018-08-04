@@ -187,6 +187,24 @@ code {
   content: "\00B7";
   margin: 0 0.75em;
 }
+.post .post-cover {
+  position: relative;
+  user-select: none;
+}
+.post .post-cover:after {
+  position: absolute;
+  content: '';
+  width: 82%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 40px 10px #fff inset;
+}
+.post .post-cover img {
+  max-width: 80%;
+  border-radius: 10px;
+}
 .post .post-content {
   position: relative;
   color: #777;
@@ -211,6 +229,9 @@ code {
 }
 .post .post-content a.more-link:hover {
   box-shadow: none;
+}
+.post .post-content img {
+  max-width: 100%;
 }
 .aside {
   overflow: hidden;
